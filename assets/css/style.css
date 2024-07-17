@@ -33,7 +33,7 @@
   --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
   --charcoal: hsla(218, 22%, 26%, 1);
   --raisin-black: hsla(216, 14%, 14%, 1);
-  --light-gray: hsla(0, 0%, 79%, 1);
+  --light-gray: rgb(126, 125, 125);
   --blue-crayola: hsla(219, 72%, 56%, 1);
   --black-coral: hsla(220, 12%, 43%, 1);
 
@@ -731,7 +731,14 @@ body.nav-active { overflow: hidden; }
   margin-block-start: 25px;
 }
 
-.input-field {
+.contactform{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field, textarea {
   background-color: var(--white_a3);
   color: var(--light-gray);
   font-size: var(--fs-7);
@@ -740,24 +747,27 @@ body.nav-active { overflow: hidden; }
   border-radius: var(--radius-6);
   box-shadow: var(--shadow-3);
   outline: none;
+  margin: 10px;
+  width: 470px;
+  height: 58px;
 }
+
+textarea{
+  height: 200px;
+}
+
 
 .input-field::placeholder { color: inherit; }
 
-.submit-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 0 var(--radius-6) var(--radius-6) 0;
+.form-submit {
+  height: 42px;
+  width: 155px;
+  border-radius: 15px;
   background-color: var(--violet-blue-crayola);
   color: var(--white);
   padding-inline: 24px;
   font-weight: var(--fw-700);
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -1104,4 +1114,11 @@ body.nav-active { overflow: hidden; }
 
   .feature-list { grid-template-columns: 1fr 1fr; }
 
+}
+
+.contactForm{
+  flex-direction: column;
+  gap: 20px;
+  align-self: center;
+  justify-content: center;
 }
