@@ -783,6 +783,7 @@ textarea{
   color: var(--white);
   padding-inline: 24px;
   font-weight: var(--fw-700);
+  margin-top: 20px;
 }
 
 
