@@ -753,7 +753,11 @@ body.nav-active { overflow: hidden; }
   height: 58px;
 }
 
-
+.map {
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px 20px;
+}
 
 textarea{
   height: 200px;
