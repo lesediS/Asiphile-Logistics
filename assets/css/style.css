@@ -786,6 +786,10 @@ textarea{
   margin-top: 20px;
 }
 
+.centreFoot{
+  display: flex;
+  justify-content: center;
+}
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -816,9 +820,6 @@ textarea{
   .project-card .card-content { padding: 40px; }
 
 }
-
-
-
 
 
 /**
